@@ -7,7 +7,7 @@ teamMembers :: String
 teamMembers = "Ashwin Jeyaseelan Sang-Kyun Han"
 
 playerGigaBot :: Player
-playerGigaBot = Player strategy "Future"
+playerGigaBot = Player strategy "GigaBot"
 
 strategy :: Tile -> Board -> IO Move
 strategy tile board = error "Define me!"
