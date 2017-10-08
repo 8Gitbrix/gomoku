@@ -1,0 +1,380 @@
+
+==================== FINAL INTERFACE ====================
+2017-10-07 21:21:36.088791 UTC
+
+interface main@main:Checks 8002
+  interface hash: 0a2516d4097c969bff70f5ae399818b7
+  ABI hash: 45043d71f304e946e6d8ad579cadf002
+  export-list hash: 67c2c1a957e3dbdb15359134cee28e21
+  orphan hash: f56d99867f179bce40b49d397e7c7391
+  flag hash: 1cc6e58647e2430a2b08029845158a37
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Checks.checkFull
+  Checks.p1wins
+  Checks.p2wins
+  Checks.scoreBoard
+  Checks.showBoardNew
+  Checks.showWinningBoard
+  Checks.tileWins
+  Checks.winningMoves
+module dependencies: Types
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:Data.Foldable 3e0b6967a1da89945d0e2d47266337a2
+import  -/  base-4.9.1.0:Data.List 07ae2acca6538aa0800bd0a993ac6ac1
+import  -/  base-4.9.1.0:Data.OldList 27987919d8da2f92e3f472ca81f730f8
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.Num 00bfaa7b2f9d6084913c0697a8a49ec8
+import  -/  base-4.9.1.0:GHC.Show a027f5ac24879eaba752f44aa90fe511
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+import  -/  Types eaeec73556c2e2bcf8ca22ab00a50713
+  exports: 2e31c236f81ee30d65781f7ce55b596d
+  ?? 449d082fcb77caf26b6a93ee5ffcad44
+  Board 242b0ce61f3903330f3b883851d622c0
+  EmptyTile c07f2b68744a0469d420063830b7cd5a
+  Move 0d3405d3da72a5980cbce361e99eda30
+  O 3e3d664b9abfc16442e719f38716e5ca
+  Tile b7da88f9b458cbc8de2b41cb557c0dd9
+  X 9b1e0571345b29546ad050ac23ce855b
+  dim 4e4462ac7aaac753706c23a51a05ee69
+  dimK 3acd4b7c47e3b21920133adc0e104bf5
+  dimM e498fd4a37ed84effdf9361ae3125ac4
+  dimN 03e87608c3b1e6dbcec9ed5ae6dad3fe
+  flipTile 30335ce664e3c65e95476804a6c733d9
+f0ac27201764e25aa99f6085fce08f35
+  $s$fEq(,) :: GHC.Classes.Eq (GHC.Types.Int, GHC.Types.Int)
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (GHC.Types.Int, GHC.Types.Int)
+                  (GHC.Classes.$fEq(,)_$c==
+                     @ GHC.Types.Int
+                     @ GHC.Types.Int
+                     GHC.Classes.$fEqInt
+                     GHC.Classes.$fEqInt)
+                  (GHC.Classes.$fEq(,)_$c/=
+                     @ GHC.Types.Int
+                     @ GHC.Types.Int
+                     GHC.Classes.$fEqInt
+                     GHC.Classes.$fEqInt) -}
+cada127ab7d796fbbc5880140879c022
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Checks.$trModule2
+                   Checks.$trModule1) -}
+d0113353e5963572cc028fc08541c0c2
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Checks"#) -}
+e44e7afbee2331a5dc4991e857da3f8d
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+ec40b9cfd35c5b06b423f492c36edaa5
+  checkFull :: Types.Board -> GHC.Types.Bool
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Checks.checkFull1
+                  `cast`
+                (<Types.Board>_R ->_R Data.Monoid.N:All[0]) -}
+196fbaa5010d174593ed2a3b896a2d58
+  checkFull1 :: Types.Board -> Data.Monoid.All
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: (\ (b :: Types.Board) ->
+                 letrec {
+                   go :: [GHC.Types.Int] -> Data.Monoid.All
+                     {- Arity: 1, Strictness: <S,1*U> -}
+                   = \ (ds :: [GHC.Types.Int]) ->
+                     case ds of wild {
+                       [] -> GHC.Types.True `cast` (Sym (Data.Monoid.N:All[0]))
+                       : y ys
+                       -> letrec {
+                            go1 :: [GHC.Types.Int] -> Data.Monoid.All
+                              {- Arity: 1, Strictness: <S,1*U> -}
+                            = \ (ds1 :: [GHC.Types.Int]) ->
+                              case ds1 of wild1 {
+                                [] -> GHC.Types.True `cast` (Sym (Data.Monoid.N:All[0]))
+                                : y1 ys1
+                                -> case GHC.List.lookup
+                                          @ Types.Move
+                                          @ Types.Tile
+                                          Types.$s$fEq(,)
+                                          (y, y1)
+                                          b of wild2 {
+                                     GHC.Base.Nothing
+                                     -> GHC.Types.False `cast` (Sym (Data.Monoid.N:All[0]))
+                                     GHC.Base.Just v
+                                     -> case v of wild3 {
+                                          Types.EmptyTile
+                                          -> GHC.Types.False `cast` (Sym (Data.Monoid.N:All[0]))
+                                          Types.X -> go1 ys1
+                                          Types.O -> go1 ys1 } } }
+                          } in
+                          case (go1 Checks.checkFull2)
+                                 `cast`
+                               (Data.Monoid.N:All[0]) of wild1 {
+                            GHC.Types.False
+                            -> GHC.Types.False `cast` (Sym (Data.Monoid.N:All[0]))
+                            GHC.Types.True -> go ys } }
+                 } in
+                 go Checks.checkFull2) -}
+562f38859c65278e71f23a684a9ab39e
+  checkFull2 :: [GHC.Types.Int]
+  {- Unfolding: (GHC.Enum.eftInt 1# 15#) -}
+c8503d85658b49f87a5890343ae2ea7c
+  p1wins :: Types.Board -> GHC.Types.Bool
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (b :: Types.Board) -> Checks.tileWins b Types.X) -}
+0e0f85a6d309c3c3eb7d1c313c8f59ba
+  p2wins :: Types.Board -> GHC.Types.Bool
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (b :: Types.Board) -> Checks.tileWins b Types.O) -}
+13d00a646887471a6b6b99bd7e1d76f1
+  scoreBoard ::
+    Types.Tile -> Types.Board -> GHC.Base.Maybe GHC.Types.Int
+  {- Arity: 2, Strictness: <L,U><L,U>,
+     Unfolding: (\ (tile :: Types.Tile) (board :: Types.Board) ->
+                 case Checks.tileWins board tile of wild {
+                   GHC.Types.False
+                   -> case Checks.tileWins board (Types.flipTile tile) of wild1 {
+                        GHC.Types.False
+                        -> case (Checks.checkFull1 board)
+                                  `cast`
+                                (Data.Monoid.N:All[0]) of wild2 {
+                             GHC.Types.False -> GHC.Base.Nothing @ GHC.Types.Int
+                             GHC.Types.True -> Checks.scoreBoard5 }
+                        GHC.Types.True -> Checks.scoreBoard3 }
+                   GHC.Types.True -> Checks.scoreBoard1 }) -}
+a53075d5727adcdb5366e7219e2fc157
+  scoreBoard1 :: GHC.Base.Maybe GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Base.Just @ GHC.Types.Int Checks.scoreBoard2) -}
+bc234268ce95f3398640ae1718693d0d
+  scoreBoard2 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 1#) -}
+f855f878cbd1418647a6e1060710b43f
+  scoreBoard3 :: GHC.Base.Maybe GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Base.Just @ GHC.Types.Int Checks.scoreBoard4) -}
+382804cea016fa3a1dc1c96886b273b9
+  scoreBoard4 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# -1#) -}
+214870e8376ce43fc51214d929f61f77
+  scoreBoard5 :: GHC.Base.Maybe GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Base.Just @ GHC.Types.Int Checks.scoreBoard6) -}
+de5147d706e6400b2ac9d14f3e7e4d4d
+  scoreBoard6 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+27773a15773769e097dcd2c8ecb56630
+  showBoardNew :: Types.Move -> Types.Board -> GHC.Base.String
+  {- Arity: 2, Strictness: <L,U(U(U),U(U))><L,U>,
+     Unfolding: (\ (m :: Types.Move) (b :: Types.Board) ->
+                 letrec {
+                   go :: [GHC.Types.Int] -> [GHC.Base.String]
+                     {- Arity: 1, Strictness: <S,1*U> -}
+                   = \ (ds :: [GHC.Types.Int]) ->
+                     case ds of wild {
+                       [] -> GHC.Types.[] @ GHC.Base.String
+                       : y ys
+                       -> GHC.Types.:
+                            @ GHC.Base.String
+                            (letrec {
+                               go1 :: [GHC.Types.Int] -> [[GHC.Types.Char]]
+                                 {- Arity: 1, Strictness: <S,1*U> -}
+                               = \ (ds1 :: [GHC.Types.Int]) ->
+                                 case ds1 of wild1 {
+                                   [] -> GHC.Types.[] @ [GHC.Types.Char]
+                                   : y1 ys1
+                                   -> GHC.Types.:
+                                        @ [GHC.Types.Char]
+                                        (case m of ww3 { (,) ww4 ww5 ->
+                                         case y of wild2 { GHC.Types.I# x ->
+                                         case ww4 of wild3 { GHC.Types.I# y2 ->
+                                         let {
+                                           $j :: GHC.Prim.Void# -> [GHC.Types.Char]
+                                             {- Arity: 1, Strictness: <L,A> -}
+                                           = \ (w :: GHC.Prim.Void#)[OneShot] ->
+                                             case GHC.List.lookup
+                                                    @ Types.Move
+                                                    @ Types.Tile
+                                                    Types.$s$fEq(,)
+                                                    (wild2, y1)
+                                                    b of wild4 {
+                                               GHC.Base.Nothing -> Types.$fShowTile3
+                                               GHC.Base.Just v
+                                               -> case v of wild5 {
+                                                    Types.EmptyTile -> Types.$fShowTile3
+                                                    Types.X -> Types.$fShowTile2
+                                                    Types.O -> Types.$fShowTile1 } }
+                                         } in
+                                         case GHC.Prim.tagToEnum#
+                                                @ GHC.Types.Bool
+                                                (GHC.Prim.==# x y2) of wild4 {
+                                           GHC.Types.False -> $j GHC.Prim.void#
+                                           GHC.Types.True
+                                           -> case y1 of wild5 { GHC.Types.I# x1 ->
+                                              case ww5 of wild6 { GHC.Types.I# y3 ->
+                                              case GHC.Prim.tagToEnum#
+                                                     @ GHC.Types.Bool
+                                                     (GHC.Prim.==# x1 y3) of wild7 {
+                                                GHC.Types.False -> $j GHC.Prim.void#
+                                                GHC.Types.True
+                                                -> GHC.CString.unpackAppendCString#
+                                                     "\ESC[31m"#
+                                                     (case GHC.List.lookup
+                                                             @ Types.Move
+                                                             @ Types.Tile
+                                                             Types.$s$fEq(,)
+                                                             (wild2, wild5)
+                                                             b of wild8 {
+                                                        GHC.Base.Nothing -> Checks.showBoardNew5
+                                                        GHC.Base.Just v
+                                                        -> case v of wild9 {
+                                                             Types.EmptyTile -> Checks.showBoardNew5
+                                                             Types.X -> Checks.showBoardNew4
+                                                             Types.O
+                                                             -> Checks.showBoardNew2 } }) } } } } } } })
+                                        (go1 ys1) }
+                             } in
+                             case go1 Checks.checkFull2 of wild1 {
+                               [] -> GHC.Types.[] @ GHC.Types.Char
+                               : x xs1
+                               -> Data.OldList.intercalate_$spoly_go
+                                    @ GHC.Types.Char
+                                    x
+                                    (Data.OldList.prependToAll
+                                       @ [GHC.Types.Char]
+                                       Checks.showBoardNew1
+                                       xs1) })
+                            (go ys) }
+                 } in
+                 Data.OldList.unlines (go Checks.checkFull2)) -}
+f449ab7fb3b27a32f07520e3cde32037
+  showBoardNew1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "|"#) -}
+30b99a681af7e25ca339b8e9420af540
+  showBoardNew2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   Types.$fShowTile1
+                   Checks.showBoardNew3) -}
+457e959f2520a3f900800de91bde8ce3
+  showBoardNew3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "\ESC[0m"#) -}
+3bf290724e9b2b4c1db9baa3ac3e5df6
+  showBoardNew4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   Types.$fShowTile2
+                   Checks.showBoardNew3) -}
+ebfaebd7db0cfb76a8c8439e391a26d3
+  showBoardNew5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   Types.$fShowTile3
+                   Checks.showBoardNew3) -}
+2ebb296cc22568c745f380be42e5b430
+  showWinningBoard :: Types.Board -> Types.Tile -> GHC.Base.String
+  {- Arity: 2, Strictness: <L,U><L,U>,
+     Unfolding: (\ (b :: Types.Board) (t :: Types.Tile) ->
+                 let {
+                   wins :: [Types.Move] = Checks.winningMoves b t
+                 } in
+                 letrec {
+                   go :: [GHC.Types.Int] -> [GHC.Base.String]
+                     {- Arity: 1, Strictness: <S,1*U> -}
+                   = \ (ds :: [GHC.Types.Int]) ->
+                     case ds of wild {
+                       [] -> GHC.Types.[] @ GHC.Base.String
+                       : y ys
+                       -> GHC.Types.:
+                            @ GHC.Base.String
+                            (letrec {
+                               go1 :: [GHC.Types.Int] -> [[GHC.Types.Char]]
+                                 {- Arity: 1, Strictness: <S,1*U> -}
+                               = \ (ds1 :: [GHC.Types.Int]) ->
+                                 case ds1 of wild1 {
+                                   [] -> GHC.Types.[] @ [GHC.Types.Char]
+                                   : y1 ys1
+                                   -> GHC.Types.:
+                                        @ [GHC.Types.Char]
+                                        (case GHC.List.elem
+                                                @ (GHC.Types.Int, GHC.Types.Int)
+                                                Checks.$s$fEq(,)
+                                                (y, y1)
+                                                wins of wild2 {
+                                           GHC.Types.False
+                                           -> case GHC.List.lookup
+                                                     @ Types.Move
+                                                     @ Types.Tile
+                                                     Types.$s$fEq(,)
+                                                     (y, y1)
+                                                     b of wild3 {
+                                                GHC.Base.Nothing -> Types.$fShowTile3
+                                                GHC.Base.Just v
+                                                -> case v of wild4 {
+                                                     Types.EmptyTile -> Types.$fShowTile3
+                                                     Types.X -> Types.$fShowTile2
+                                                     Types.O -> Types.$fShowTile1 } }
+                                           GHC.Types.True
+                                           -> GHC.CString.unpackAppendCString#
+                                                "\ESC[32m"#
+                                                (case GHC.List.lookup
+                                                        @ Types.Move
+                                                        @ Types.Tile
+                                                        Types.$s$fEq(,)
+                                                        (y, y1)
+                                                        b of wild3 {
+                                                   GHC.Base.Nothing -> Checks.showBoardNew5
+                                                   GHC.Base.Just v
+                                                   -> case v of wild4 {
+                                                        Types.EmptyTile -> Checks.showBoardNew5
+                                                        Types.X -> Checks.showBoardNew4
+                                                        Types.O -> Checks.showBoardNew2 } }) })
+                                        (go1 ys1) }
+                             } in
+                             case go1 Checks.checkFull2 of wild1 {
+                               [] -> GHC.Types.[] @ GHC.Types.Char
+                               : x xs1
+                               -> Data.OldList.intercalate_$spoly_go
+                                    @ GHC.Types.Char
+                                    x
+                                    (Data.OldList.prependToAll
+                                       @ [GHC.Types.Char]
+                                       Checks.showBoardNew1
+                                       xs1) })
+                            (go ys) }
+                 } in
+                 Data.OldList.unlines (go Checks.checkFull2)) -}
+58fac6b94df2c3476d9763bea2b0a316
+  tileWins :: Types.Board -> Types.Tile -> GHC.Types.Bool
+  {- Arity: 2, Strictness: <L,U><L,U> -}
+4eae111df91519a97d52d8aa061b6939
+  winningMoves :: Types.Board -> Types.Tile -> [Types.Move]
+  {- Arity: 2, Strictness: <L,U><L,U> -}
+"SPEC/Checks $fEq(,) @ Int @ Int" [ALWAYS] forall ($dEq1 :: GHC.Classes.Eq
+                                                              GHC.Types.Int)
+                                                  ($dEq :: GHC.Classes.Eq GHC.Types.Int)
+  GHC.Classes.$fEq(,) @ GHC.Types.Int @ GHC.Types.Int $dEq $dEq1
+  = Checks.$s$fEq(,)
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

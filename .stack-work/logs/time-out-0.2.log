@@ -1,0 +1,19 @@
+Configuring time-out-0.2...
+Building time-out-0.2...
+Preprocessing library time-out-0.2...
+[1 of 7] Compiling Control.Monad.Timeout.Class ( src/Control/Monad/Timeout/Class.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/Control/Monad/Timeout/Class.o )
+[2 of 7] Compiling Control.Timeout  ( src/Control/Timeout.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/Control/Timeout.o )
+
+src/Control/Timeout.hs:37:1: warning: [-Worphans]
+    Orphan instance: instance MonadTimeout IO IO
+    To avoid this
+        move the instance declaration to the module of the class or of the type, or
+        wrap the type with a newtype and declare the instance on the new type.
+[3 of 7] Compiling Control.Timer    ( src/Control/Timer.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/Control/Timer.o )
+[4 of 7] Compiling Control.Monad.Trans.Timer ( src/Control/Monad/Trans/Timer.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/Control/Monad/Trans/Timer.o )
+[5 of 7] Compiling Control.Alarm    ( src/Control/Alarm.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/Control/Alarm.o )
+[6 of 7] Compiling Control.Monad.Trans.Alarm ( src/Control/Monad/Trans/Alarm.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/Control/Monad/Trans/Alarm.o )
+[7 of 7] Compiling Control.Monad.Trans.Timeout ( src/Control/Monad/Trans/Timeout.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/Control/Monad/Trans/Timeout.o )
+Installing library in
+/Users/ashwinjeyaseelan/Documents/GitHub/gomoku/.stack-work/install/x86_64-osx/lts-9.4/8.0.2/lib/x86_64-osx-ghc-8.0.2/time-out-0.2-HViLo3QPw3bA7pAnNlCjrp
+Registering time-out-0.2...

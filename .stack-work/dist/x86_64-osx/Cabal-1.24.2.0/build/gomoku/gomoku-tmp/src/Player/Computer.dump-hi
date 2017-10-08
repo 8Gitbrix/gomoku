@@ -1,0 +1,102 @@
+
+==================== FINAL INTERFACE ====================
+2017-10-07 21:21:35.739237 UTC
+
+interface main@main:Player.Computer 8002
+  interface hash: 0d60987608ca7666555bbec82bee5033
+  ABI hash: 2d630fff4da3bb3129e96346c5dd025e
+  export-list hash: 2db2705964288a4bd33bdfbd79ff7f77
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: e397bc60a6586cf79b495f4bca34f357
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Player.Computer.playerComputer
+module dependencies: Types
+package dependencies: array-0.5.1.1@array-0.5.1.1 base-4.9.1.0*
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1 random-1.1@random-1.1-9tceXaeYIMZ4JrKq20Egog*
+                      time-1.6.0.1@time-1.6.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Gregorian
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Format.Parse
+         time-1.6.0.1@time-1.6.0.1:Data.Time.LocalTime.LocalTime
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Complex base-4.9.1.0:Data.Either
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
+import  -/  Types eaeec73556c2e2bcf8ca22ab00a50713
+  exports: 2e31c236f81ee30d65781f7ce55b596d
+  ?? 449d082fcb77caf26b6a93ee5ffcad44
+  Board 242b0ce61f3903330f3b883851d622c0
+  EmptyTile c07f2b68744a0469d420063830b7cd5a
+  Player 7ffc29fbfc3be2ec15169276e73e1051
+  Player c01f365c11054d72d1b22907633ee3db
+  Tile b7da88f9b458cbc8de2b41cb557c0dd9
+  dim 4e4462ac7aaac753706c23a51a05ee69
+  dimM e498fd4a37ed84effdf9361ae3125ac4
+  dimN 03e87608c3b1e6dbcec9ed5ae6dad3fe
+import  -/  random-1.1@random-1.1-9tceXaeYIMZ4JrKq20Egog:System.Random cc3ef358c669b194cf9fe94db6f2430f
+ca777fcc0bb4c46acc4745d9d8646721
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Player.Computer.$trModule2
+                   Player.Computer.$trModule1) -}
+5c8dd04bc7ce793b13c771e29285be53
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Player.Computer"#) -}
+798013386c4afe3cc67ac789ac8d598f
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+31a287e7387456c086a82f2994d744df
+  $wgetRandomMove ::
+    Types.Board
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          (GHC.Types.Int, GHC.Types.Int) #)
+  {- Arity: 2, Strictness: <L,U><S,U>, Inline: [0] -}
+fa56c63de6da57ffd55e457ab48f2254
+  playerComputer :: Types.Player
+  {- Strictness: m,
+     Unfolding: (Types.Player
+                   Player.Computer.playerComputer2
+                     `cast`
+                   (<Types.Tile>_R
+                    ->_R <Types.Board>_R
+                    ->_R Sym (GHC.Types.N:IO[0] <(GHC.Types.Int, GHC.Types.Int)>_R))
+                   Player.Computer.playerComputer1) -}
+08421ddbf60c47e2dac5dec7b3e4d7ab
+  playerComputer1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Computer"#) -}
+101ea3311658b51489758663ed7cb836
+  playerComputer2 ::
+    Types.Tile
+    -> Types.Board
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          (GHC.Types.Int, GHC.Types.Int) #)
+  {- Arity: 3, Strictness: <L,A><L,U><S,U>, Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, True)
+                (\ (w :: Types.Tile)
+                   (w1 :: Types.Board)
+                   (w2 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 Player.Computer.$wgetRandomMove w1 w2) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

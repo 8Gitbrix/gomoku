@@ -1,0 +1,321 @@
+
+==================== FINAL INTERFACE ====================
+2017-10-08 00:09:58.310702 UTC
+
+interface main@main:Player.GigaBot 8002
+  interface hash: 4c58dce2ce4a6e65d48ad50e1d56e506
+  ABI hash: eca175072a3dfc7f694c824e63c81be1
+  export-list hash: 7e0bfff9324c64ab4591a67d6221b25e
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: e397bc60a6586cf79b495f4bca34f357
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Player.GigaBot.playerGigaBot
+module dependencies: Checks Types
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.Err 3bba35a16538d33d424682ce66876cdd
+import  -/  base-4.9.1.0:GHC.Show a027f5ac24879eaba752f44aa90fe511
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
+import  -/  Checks 45043d71f304e946e6d8ad579cadf002
+  exports: 67c2c1a957e3dbdb15359134cee28e21
+  scoreBoard 13d00a646887471a6b6b99bd7e1d76f1
+import  -/  Types eaeec73556c2e2bcf8ca22ab00a50713
+  exports: 2e31c236f81ee30d65781f7ce55b596d
+  Board 242b0ce61f3903330f3b883851d622c0
+  Move 0d3405d3da72a5980cbce361e99eda30
+  Player 7ffc29fbfc3be2ec15169276e73e1051
+  Player c01f365c11054d72d1b22907633ee3db
+  Tile b7da88f9b458cbc8de2b41cb557c0dd9
+  put 390d46ef530fbccf2ea03c5ce0743a98
+  validMoves 0a71f632f8fed7a1a169232f34c07bb6
+753a7a71247f30070f3c997085daf28d
+  $fShowNode :: GHC.Show.Show Player.GigaBot.Node
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Player.GigaBot.Node
+                  Player.GigaBot.$fShowNode_$cshowsPrec
+                  Player.GigaBot.$fShowNode_$cshow
+                  Player.GigaBot.$fShowNode_$cshowList -}
+753a7a71247f30070f3c997085daf28d
+  $fShowNode1 :: Player.GigaBot.Node -> GHC.Show.ShowS
+  {- Arity: 1,
+     Unfolding: (\ (w :: Player.GigaBot.Node) ->
+                 case w of ww { Player.GigaBot.Node ww1 ww2 ww3 ->
+                 Player.GigaBot.$w$cshowsPrec 0# ww1 ww2 ww3 }) -}
+753a7a71247f30070f3c997085daf28d
+  $fShowNode_$cshow :: Player.GigaBot.Node -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U(U,U(U(U),U(U)),1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Player.GigaBot.Node) ->
+                 Player.GigaBot.$fShowNode_$cshowsPrec
+                   GHC.Show.shows22
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+753a7a71247f30070f3c997085daf28d
+  $fShowNode_$cshowList :: [Player.GigaBot.Node] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__
+                   @ Player.GigaBot.Node
+                   Player.GigaBot.$fShowNode1) -}
+753a7a71247f30070f3c997085daf28d
+  $fShowNode_$cshowsPrec ::
+    GHC.Types.Int -> Player.GigaBot.Node -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S(S),1*U(U)><S,1*U(U,U(U(U),U(U)),1*U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Types.Int) (w1 :: Player.GigaBot.Node) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { Player.GigaBot.Node ww3 ww4 ww5 ->
+                 Player.GigaBot.$w$cshowsPrec ww1 ww3 ww4 ww5 } }) -}
+8306e42a1c67f30651417ea0b27bcd4d
+  $fShowTree :: GHC.Show.Show (Player.GigaBot.Tree a)
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ a.
+                  @ (Player.GigaBot.Tree a)
+                  (Player.GigaBot.$fShowTree_$cshowsPrec @ a)
+                  (Player.GigaBot.$fShowTree_$cshow @ a)
+                  (Player.GigaBot.$fShowTree_$cshowList @ a) -}
+8306e42a1c67f30651417ea0b27bcd4d
+  $fShowTree1 :: Player.GigaBot.Tree a -> GHC.Show.ShowS
+  {- Arity: 1 -}
+7d7d5987e2769dcf863f5a8dc754c994
+  $fShowTree2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Data "#) -}
+909e41e011277225715383b5fba231ef
+  $fShowTree3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Empty"#) -}
+ea787ce81bba0c516f1b3441e56b6d33
+  $fShowTree4 :: GHC.Show.ShowS
+  {- Arity: 1,
+     Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   Player.GigaBot.$fShowTree3) -}
+8306e42a1c67f30651417ea0b27bcd4d
+  $fShowTree_$cshow :: Player.GigaBot.Tree a -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ @ a (x :: Player.GigaBot.Tree a) ->
+                 case x of wild {
+                   Player.GigaBot.Empty -> Player.GigaBot.$fShowTree3
+                   Player.GigaBot.Data b1 b2
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        Player.GigaBot.$fShowTree2
+                        (case b1 of ww { Player.GigaBot.Node ww1 ww2 ww3 ->
+                         Player.GigaBot.$w$cshowsPrec
+                           11#
+                           ww1
+                           ww2
+                           ww3
+                           (GHC.Types.:
+                              @ GHC.Types.Char
+                              GHC.Show.showSpace1
+                              (GHC.Show.showList__
+                                 @ (Player.GigaBot.Tree a)
+                                 (Player.GigaBot.$fShowTree1 @ a)
+                                 b2
+                                 (GHC.Types.[] @ GHC.Types.Char))) }) }) -}
+8306e42a1c67f30651417ea0b27bcd4d
+  $fShowTree_$cshowList :: [Player.GigaBot.Tree a] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (\ @ a ->
+                 GHC.Show.showList__
+                   @ (Player.GigaBot.Tree a)
+                   (Player.GigaBot.$fShowTree1 @ a)) -}
+8306e42a1c67f30651417ea0b27bcd4d
+  $fShowTree_$cshowsPrec ::
+    GHC.Types.Int -> Player.GigaBot.Tree a -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <L,1*U(U)><S,1*U>,
+     Unfolding: (\ @ a
+                   (ds :: GHC.Types.Int)
+                   (ds1 :: Player.GigaBot.Tree a) ->
+                 case ds1 of wild {
+                   Player.GigaBot.Empty -> Player.GigaBot.$fShowTree4
+                   Player.GigaBot.Data b1 b2
+                   -> case ds of wild1 { GHC.Types.I# x ->
+                      let {
+                        f :: GHC.Base.String -> GHC.Base.String
+                        = case b1 of ww { Player.GigaBot.Node ww1 ww2 ww3 ->
+                          Player.GigaBot.$w$cshowsPrec 11# ww1 ww2 ww3 }
+                      } in
+                      let {
+                        p :: GHC.Show.ShowS {- Arity: 1, Strictness: <L,U> -}
+                        = \ (x1 :: GHC.Base.String) ->
+                          GHC.Base.++
+                            @ GHC.Types.Char
+                            Player.GigaBot.$fShowTree2
+                            (f (GHC.Types.:
+                                  @ GHC.Types.Char
+                                  GHC.Show.showSpace1
+                                  (GHC.Show.showList__
+                                     @ (Player.GigaBot.Tree a)
+                                     (Player.GigaBot.$fShowTree1 @ a)
+                                     b2
+                                     x1)))
+                      } in
+                      case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.>=# x 11#) of wild2 {
+                        GHC.Types.False -> p
+                        GHC.Types.True
+                        -> \ (x1 :: GHC.Base.String) ->
+                           GHC.Types.:
+                             @ GHC.Types.Char
+                             GHC.Show.shows7
+                             (p (GHC.Types.: @ GHC.Types.Char GHC.Show.shows4 x1)) } } }) -}
+613f7b3b168b50bba3036a5a50b6a506
+  $tc'Data :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5919796120268987137##
+                   6842084121814839449##
+                   Player.GigaBot.$trModule
+                   Player.GigaBot.$tc'Data1) -}
+a4549de3d79fb0e1226a98bd3bae2f14
+  $tc'Data1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Data"#) -}
+a4e08464672b5bbf0268f33943d39a7c
+  $tc'Empty :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7842416660523892587##
+                   11073070085579443763##
+                   Player.GigaBot.$trModule
+                   Player.GigaBot.$tc'Empty1) -}
+4460bf3a5431ee5c137416315a0adf6d
+  $tc'Empty1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Empty"#) -}
+8204e8626f905246474588ad1ee6fe24
+  $tc'Node :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7774700558630553975##
+                   4662878851457396789##
+                   Player.GigaBot.$trModule
+                   Player.GigaBot.$tc'Node1) -}
+73b951a910d268e6fe993e68e3e477c9
+  $tc'Node1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Node"#) -}
+ea268fccc7de5dda596dca4a1338d5bc
+  $tcNode :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4848209549542366884##
+                   7375275747070719008##
+                   Player.GigaBot.$trModule
+                   Player.GigaBot.$tcNode1) -}
+a011268f312c534f3e06b16df2dbdb80
+  $tcNode1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Node"#) -}
+120fd3f96ee1d36c9530bc868993dcbe
+  $tcTree :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   11213135056905228778##
+                   7466859635718438242##
+                   Player.GigaBot.$trModule
+                   Player.GigaBot.$tcTree1) -}
+60d5ef758efa0ca27d7f1d098b508556
+  $tcTree1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Tree"#) -}
+4503e4e819ab2e89011b33dd29d1c81f
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Player.GigaBot.$trModule2
+                   Player.GigaBot.$trModule1) -}
+3928e20cbe081e3a45d4a4cd827c61b9
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Player.GigaBot"#) -}
+e818dd002103d2cf0bcedaaa001790de
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+bad023ee5751bb8e427e536a950ee994
+  $w$cshowsPrec ::
+    GHC.Prim.Int#
+    -> Types.Board
+    -> Types.Move
+    -> GHC.Base.Maybe GHC.Types.Int
+    -> GHC.Show.ShowS
+  {- Arity: 4, Strictness: <S,U><L,U><L,U(U(U),U(U))><L,1*U>,
+     Inline: [0] -}
+753a7a71247f30070f3c997085daf28d
+  data Node
+    = Node {state :: Types.Board,
+            action :: Types.Move,
+            value :: GHC.Base.Maybe GHC.Types.Int}
+8306e42a1c67f30651417ea0b27bcd4d
+  type role Tree phantom
+  data Tree a
+    = Empty | Data Player.GigaBot.Node [Player.GigaBot.Tree a]
+caceebbd496b6b58da5d77a98d52725f
+  action :: Player.GigaBot.Node -> Types.Move
+  RecSel Left Player.GigaBot.Node
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LSL),1*U(A,1*U(U,U),A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Player.GigaBot.Node) ->
+                 case ds of wild { Player.GigaBot.Node ds1 ds2 ds3 -> ds2 }) -}
+2fd3d4dbef05b28cf4052b12e78df69b
+  playerGigaBot :: Types.Player
+  {- Strictness: m,
+     Unfolding: (Types.Player
+                   Player.GigaBot.strategy
+                   Player.GigaBot.playerGigaBot1) -}
+304196ff7e0aa7355d2931debd8055c1
+  playerGigaBot1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "GigaBot"#) -}
+bfaab38eba3f6038cab4891aae8ac10a
+  playerGigaBot2 :: GHC.Types.IO Types.Move
+  {- Strictness: x -}
+92deacb8d799f78623329c07c609da1c
+  state :: Player.GigaBot.Node -> Types.Board
+  RecSel Left Player.GigaBot.Node
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SLL),1*U(1*U,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Player.GigaBot.Node) ->
+                 case ds of wild { Player.GigaBot.Node ds1 ds2 ds3 -> ds1 }) -}
+388a6db428af7d8c839cc93e8e5d8ab5
+  strategy :: Types.Tile -> Types.Board -> GHC.Types.IO Types.Move
+  {- Arity: 2, Strictness: <B,A><B,A>x,
+     Unfolding: InlineRule (2, True, True)
+                (\ (tile :: Types.Tile) (board :: Types.Board) ->
+                 Player.GigaBot.playerGigaBot2) -}
+f5e58b195a78e76046ac897e5f6b54d5
+  value :: Player.GigaBot.Node -> GHC.Base.Maybe GHC.Types.Int
+  RecSel Left Player.GigaBot.Node
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LLS),1*U(A,A,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Player.GigaBot.Node) ->
+                 case ds of wild { Player.GigaBot.Node ds1 ds2 ds3 -> ds3 }) -}
+instance [safe] GHC.Show.Show [Player.GigaBot.Node]
+  = Player.GigaBot.$fShowNode
+instance [safe] GHC.Show.Show [Player.GigaBot.Tree]
+  = Player.GigaBot.$fShowTree
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
