@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2017-10-08 15:27:06.744237 UTC
+2017-10-08 21:14:33.825922 UTC
 
 interface main@main:Player.GigaBot 8002
-  interface hash: 343a613e9353407a0d96c5595b182743
-  ABI hash: db004b0d4d80cda97749fc38efbde226
+  interface hash: 1c036983c4bb4fbd5d2a8ada539c18f5
+  ABI hash: a553c1fc4b6d8c552d46002b2947a2b3
   export-list hash: 7e0bfff9324c64ab4591a67d6221b25e
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: e397bc60a6586cf79b495f4bca34f357
@@ -23,6 +23,8 @@ family instance modules: base-4.9.1.0:Control.Applicative
                          base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
                          base-4.9.1.0:GHC.TypeLits
 import  -/  base-4.9.1.0:Data.Foldable 3e0b6967a1da89945d0e2d47266337a2
+import  -/  base-4.9.1.0:Data.List 07ae2acca6538aa0800bd0a993ac6ac1
+import  -/  base-4.9.1.0:Data.OldList 27987919d8da2f92e3f472ca81f730f8
 import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
 import  -/  base-4.9.1.0:GHC.List ab8c4e523e6c479c549d3bcd5fc4a439
 import  -/  base-4.9.1.0:GHC.Num 00bfaa7b2f9d6084913c0697a8a49ec8
@@ -70,7 +72,7 @@ e818dd002103d2cf0bcedaaa001790de
                 (\ (w :: Types.Board) (w1 :: Types.Tile) (w2 :: GHC.Types.Int) ->
                  case w2 of ww { GHC.Types.I# ww1 ->
                  Player.GigaBot.$wadjMove w w1 ww1 }) -}
-f05cfc685e7085c4b7c9619dc400297b
+c4f3d91370777a57f514e2339f05d287
   playerGigaBot :: Types.Player
   {- Strictness: m,
      Unfolding: (Types.Player
@@ -83,7 +85,7 @@ f05cfc685e7085c4b7c9619dc400297b
 304196ff7e0aa7355d2931debd8055c1
   playerGigaBot1 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "GigaBot"#) -}
-2fee65055fd2f9af0c56e1523bb04486
+d9b2f10a658846a8a6155ad9e2c0e09e
   playerGigaBot2 ::
     Types.Tile
     -> Types.Board
@@ -99,9 +101,9 @@ f05cfc685e7085c4b7c9619dc400297b
                    -> (# eta,
                          Player.GigaBot.adjMove board tile Player.GigaBot.playerGigaBot3 #)
                    : h t -> (# eta, h #) }) -}
-c0d9e19c8fef4d0ba7ca5186337569e7
+2d40eccdd4e31dd8e1468100026f7f96
   playerGigaBot3 :: GHC.Types.Int
-  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 4#) -}
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 5#) -}
 vectorised variables:
 vectorised tycons:
 vectorised reused tycons:
