@@ -11,14 +11,14 @@ playerGigaBot = Player strategy "GigaBot"
 
 strategy :: Tile -> Board -> IO Move
 strategy tile board = case (winningMoves board tile) of
-  [] -> (adjMove board tile 4)
-  h:t -> h
+  [] -> pure (adjMove board tile 4)
+  h:t -> pure h
 
 -- find max adjacent area and return move
 adjMove :: Board -> Tile -> Int -> Move
 adjMove b t 1 = head (validMoves b)
 adjMove b t d  = case (numMoves b t d) of
-  [] -> adjMove b t d-1
+  [] -> adjMove b t (d-1)
   h:t -> h
 
 numMoves :: Board -> Tile -> Int -> [Move]

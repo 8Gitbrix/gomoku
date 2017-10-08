@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2017-10-07 23:45:06.007346 UTC
+2017-10-08 15:27:06.848964 UTC
 
 interface main@main:Players 8002
-  interface hash: 7aa5ace01309d58f91ea1c2b76cffdaa
-  ABI hash: f9b8172b7783203d08c2ed126e4f4af2
+  interface hash: f92090145c9334ec7c9864a54216c618
+  ABI hash: 299587bfdf0f5a5425837f09fa5ca068
   export-list hash: 3ff38aa313fa92dfcb18b9ab67dd95d1
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 1cc6e58647e2430a2b08029845158a37
@@ -39,9 +39,9 @@ import  -/  Player.BestNext 761ade5e13c556cf47612b81fab89bbb
 import  -/  Player.Computer 2d630fff4da3bb3129e96346c5dd025e
   exports: 2db2705964288a4bd33bdfbd79ff7f77
   playerComputer fa56c63de6da57ffd55e457ab48f2254
-import  -/  Player.GigaBot 58af71ced2d08d24859a2d85b86ef316
+import  -/  Player.GigaBot db004b0d4d80cda97749fc38efbde226
   exports: 7e0bfff9324c64ab4591a67d6221b25e
-  playerGigaBot 2fd3d4dbef05b28cf4052b12e78df69b
+  playerGigaBot f05cfc685e7085c4b7c9619dc400297b
 import  -/  Player.Human 7a8c1b285eb0cfe8003ccf2a6fff2e22
   exports: e92944ebfad0d6656bfa9917351fb1f2
   playerHuman 6e50ba3340b7e530ab43bc5aae1ba2d0
@@ -62,14 +62,14 @@ a13d716d48a36cc77ead94d32a490b93
   $trModule2 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS "main"#) -}
-9582ad89caecf497ef125642e27e7cc3
+9be3530c045669b72b3729a8416df21c
   players :: [(GHC.Base.String, Types.Player)]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ (GHC.Base.String, Types.Player)
                    Players.players10
                    Players.players1) -}
-1cebf569efa88eced0c0211712652c5a
+1adbf741f7f99ce0d5c5b411e7c7d951
   players1 :: [(GHC.Base.String, Types.Player)]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
@@ -83,7 +83,7 @@ cce051f5b67971fe67dfda73396085cf
 3475e0f7945a0d4bc90def0eff337912
   players11 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "BestNext"#) -}
-411a26d6a5a22a1c47feafe25c472736
+be4c1cbac0e5afdbc3a038261c226578
   players2 :: [(GHC.Base.String, Types.Player)]
   {- Strictness: m2,
      Unfolding: (GHC.Types.:
@@ -104,7 +104,7 @@ f90025f06d3286aea28382bb560498e4
 55e3c977ee14b8d6c1fbcba310efce71
   players5 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "Human"#) -}
-fee015990e637d0b76c9369e2d324f3f
+890535a7ffa944e1eb1ca62c2cb8a959
   players6 :: ([GHC.Types.Char], Types.Player)
   {- Strictness: m,
      Unfolding: ((Players.players7, Player.GigaBot.playerGigaBot)) -}

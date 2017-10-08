@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2017-10-07 23:45:06.40025 UTC
+2017-10-08 15:27:07.234956 UTC
 
 interface main@main:Main 8002
-  interface hash: 5b8e47c7da865cad48c367e7485382ef
-  ABI hash: b3f8a45cbff1cbe6d2ff60951f986b31
+  interface hash: 9658ac8a9f82e3983400fb92f16ed63f
+  ABI hash: 6a7a0e7d1b5b025297c9fa87090a6bca
   export-list hash: ea44e704b1d0e15af261ae0ac78a9a2f
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 83d6c9c8e6284bfefeda08da065cceb1
@@ -77,9 +77,9 @@ import  -/  Player.Computer 2d630fff4da3bb3129e96346c5dd025e
   exports: 2db2705964288a4bd33bdfbd79ff7f77
 import  -/  Player.Human 7a8c1b285eb0cfe8003ccf2a6fff2e22
   exports: e92944ebfad0d6656bfa9917351fb1f2
-import  -/  Players f9b8172b7783203d08c2ed126e4f4af2
+import  -/  Players 299587bfdf0f5a5425837f09fa5ca068
   exports: 3ff38aa313fa92dfcb18b9ab67dd95d1
-  players 9582ad89caecf497ef125642e27e7cc3
+  players 9be3530c045669b72b3729a8416df21c
 import  -/  Types eaeec73556c2e2bcf8ca22ab00a50713
   exports: 2e31c236f81ee30d65781f7ce55b596d
   Board 242b0ce61f3903330f3b883851d622c0
@@ -203,7 +203,7 @@ bded5cc98e2dbbd2aeca418842d23439
                               @ (Types.PlayerInfo, GHC.Types.Int)
                               (pi2, Main.main3)
                               (GHC.Types.[] @ (Types.PlayerInfo, GHC.Types.Int))) #) }) -}
-78eb1f69ed6c49d1bffa8c987fb598da
+818c0f857285bda59e2bca5a01b66974
   getPlayers ::
     [GHC.Base.String] -> GHC.Types.IO (Types.Player, Types.Player)
   {- Arity: 2, Strictness: <S,1*U><S,U>,
@@ -212,7 +212,7 @@ bded5cc98e2dbbd2aeca418842d23439
                   `cast`
                 (<[GHC.Base.String]>_R
                  ->_R Sym (GHC.Types.N:IO[0] <(Types.Player, Types.Player)>_R)) -}
-e3839ddf13079fe280e0106e60f52622
+781fc190164e0d86abb6ae1dc0f2de39
   getPlayers1 ::
     [GHC.Base.String]
     -> GHC.Prim.State# GHC.Prim.RealWorld
@@ -230,7 +230,7 @@ e3839ddf13079fe280e0106e60f52622
                         -> case Main.getPlayers2 n1 eta of ds2 { (#,#) ipv ipv1 ->
                            case Main.getPlayers2 n2 ipv of ds3 { (#,#) ipv2 ipv3 ->
                            (# ipv2, (ipv1, ipv3) #) } } } }) -}
-605c1c7f6007d2bb5a8ed050c63fc8c2
+5320faac2cae4ad735c9d3e4c4ae3888
   getPlayers2 ::
     GHC.Base.String
     -> GHC.Prim.State# GHC.Prim.RealWorld
@@ -274,7 +274,7 @@ ff8c39deeb6fa6bffdbe898fbe42d9c0
   getPlayers5 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    "Give at least two player names"#) -}
-abc7572830cf573afbc09152db0e7531
+787fb47fb2e69bc51a51163788f2daa6
   lookupPlayer :: GHC.Base.String -> GHC.Types.IO Types.Player
   {- Arity: 2, Strictness: <L,U><S,U>,
      Unfolding: InlineRule (0, True, True)
@@ -282,12 +282,12 @@ abc7572830cf573afbc09152db0e7531
                   `cast`
                 (<GHC.Base.String>_R
                  ->_R Sym (GHC.Types.N:IO[0] <Types.Player>_R)) -}
-783e634ba9b081cf4c88fa19accd3fd2
+ba4ceb463294651bd723ea4a961e2bbd
   main :: GHC.Types.IO ()
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: InlineRule (0, True, True)
                 Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
-3a0c1779206efbc0c3556a3f68873cfc
+dfb90060a63d83c36b8b9fe99f8f98e3
   main1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
@@ -329,7 +329,7 @@ abc7572830cf573afbc09152db0e7531
                         -> case Main.getPlayers2 n1 ipv of ds3 { (#,#) ipv2 ipv3 ->
                            case Main.getPlayers2 n2 ipv2 of ds4 { (#,#) ipv4 ipv5 ->
                            Main.main2 ipv4 (ipv3, ipv5) } } } } }) -}
-35fdae650ca23485a8e4e2031e4ec632
+ed2e81bc58886b1cc845d2d8e788e4a3
   main10 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
