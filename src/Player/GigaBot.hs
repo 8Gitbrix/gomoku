@@ -10,19 +10,20 @@ playerGigaBot :: Player
 playerGigaBot = Player strategy "GigaBot"
 
 strategy :: Tile -> Board -> IO Move
-strategy tile board = error "Define me!"
+strategy tile board = case (winningMoves board tile) of
+  [] -> (adjMove board tile 4)
+  h:t -> h
 
-data Node = Node { state :: Board, -- Current state
-                   action :: Move, -- action you took to get to this state
-                   value :: Maybe Int -- value of the action you took to get to state
-                 } deriving (Show)
+-- find max adjacent area and return move
+adjMove :: Board -> Tile -> Int -> Move
+adjMove b t 1 = head (validMoves b)
+adjMove b t d  = case (numMoves b t d) of
+  [] -> adjMove b t d-1
+  h:t -> h
 
-data Tree a = Empty | Data Node [Tree a] deriving (Show)
-
-createChildren :: Tile -> Tree a -> Tree a
-createChildren tile (Data (Node s a v) [Empty]) = Data (Node s a v) x
-  where x = [Data (Node (put s tile m) m (scoreBoard tile (put s tile m))) [Empty] | m <- (validMoves s)]
-
-
---monteCarlo :: Tree -> IO Move
---monteCarlo tree = error "Define me!"
+numMoves :: Board -> Tile -> Int -> [Move]
+numMoves b t dimA =
+   concatMap (\col -> concatMap (\row -> if all (\k -> b??(row,col+k)   == t) [0..dimA] then [(row,col+k)   | k <- [0..dimA]] else []) [1..dimM dim]) [1..dimN dim] ++
+   concatMap (\col -> concatMap (\row -> if all (\k -> b??(row+k,col)   == t) [0..dimA] then [(row+k,col)   | k <- [0..dimA]] else []) [1..dimM dim]) [1..dimN dim] ++
+   concatMap (\col -> concatMap (\row -> if all (\k -> b??(row+k,col+k) == t) [0..dimA] then [(row+k,col+k) | k <- [0..dimA]] else []) [1..dimM dim]) [1..dimN dim] ++
+   concatMap (\col -> concatMap (\row -> if all (\k -> b??(row-k,col+k) == t) [0..dimA] then [(row-k,col+k) | k <- [0..dimA]] else []) [1..dimM dim]) [1..dimN dim]
